@@ -55,7 +55,7 @@ input{
 
 
 }
-button{
+/* button{
     border: none;
     outline:none;
     padding: 16px 50px;
@@ -64,7 +64,51 @@ button{
     background: orange;
     font-size: 16px;
     cursor: pointer;
-}
+} */
+.button {
+    backface-visibility: hidden;
+    width: 20%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(0300deg,#44bbdd 0%,#40b5d6 0%,#b9bbc9 0%,#d6d8e7 12.758743198621067%,#cbc35e 23.46538084781357%,#bc5b9e 31.673803045527826%,#30a5c6 48.80442328423583%,#000000 67.36259520950284%,#18dabb 67.36259520950284%,#8ea490 84.1363275265711%,#129abc 100%);
+  border-radius: 040px;
+  border: 0px solid #379;
+  border-width: 0px 0px 5px 0px;
+  padding: 08px 08px 08px 08px;
+  box-shadow: inset 0px 1px 3px rgba(255,255,255,.4);
+    color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal
+  }
+  .button > div {
+    color: #999;
+  font-size: 10px;
+  font-family: tahoma;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+  .button > i {
+    color: #fff;
+  font-size: 1em;
+  background: rgba(84.72257552608366%,13.028913724621072%,13.028913724621072%,0.2);
+  border-radius: 100px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 0px 0px 10px;
+  position: static;
+  box-shadow: inset 0px 1px 2px rgba(0,0,0,0.4),inset 0px -1px 0px rgba(255,255,255,.5)
+  }
+  .button > .ld {
+    color: #e0eaeb;
+  font-size: initial
+  }
 /* Styles for the displaying the list which submitted by user */
 ul li{
     list-style:none;
