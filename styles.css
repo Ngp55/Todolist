@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg ,#7ed26f,#af6cc0,#ca6526,#3030b0,#2d8091);
+    padding:10px;
+
+    border: 2px solid red;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 850px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px;
+    border-radius: 50px;
+    border:3px solid black;
+}
+.todo-app h2{
+    color:#af6cc0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-app img{
+    width:20px;
+    height: 20px;
+    margin-left: 8px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    background:lightgray;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom:25px;
+}
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding:10px;
+    font-weight: 14px;
+
+
+}
+button{
+    border: none;
+    outline:none;
+    padding: 16px 50px;
+    border-radius: 35px;
+    color:#ffff;
+    background: orange;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul li{
+    list-style:none;
+    font-size: 28px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('./img/circle.png');
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+ul li.checked{
+    color:red;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content:'';
+    background-image: url('./img/fill2.png');
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background: red;
+
+}
+
+
+@media (max-width: 500px) {
+    .press li { width: 100%; } /* On small screens, show one logo per row */
+
+    .todo-app{
+        max-width: 540px;
+        position: relative;
+        top:30%;
+
+    }
+}
