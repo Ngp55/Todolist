@@ -1,26 +1,36 @@
 <html>
     <head>
         <title>ToDo List</title>
+        <!-- Link to the CSS file -->
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+        <!-- Parent container -->
         <div class="container">
+            <!-- ToDo List box -->
             <div class="todo-app">
+                <!-- Name of the app and icon of todo list -->
                 <h2>To-Do List <img src="./img/checklist.gif"></h2>
+                <!-- This div contain text box that takes input from user and add button to submit the input data -->
+                
                 <div class="row">
                     <input type="text" id="input-box" placeholder="Add some task">
                     <button onclick="addTask()">Add</button>
                 </div>
+                <!--This List will display the added data here -->
                 <ul id="list-container">
                     <!-- <li class="checked">Task 1</li>
                     <li>Task 1</li>
                     <li>Task 1</li> -->
                 </ul>
+                <!-- End of ToDo List box -->
             </div>
+            <!-- End of Parent container -->
         </div>
 
     </body>
+    <!-- Link to the JavaScript file -->
     <script src="script.js">
 
     </script>

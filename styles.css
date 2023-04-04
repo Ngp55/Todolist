@@ -4,6 +4,7 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
 }
+/* styles of parent conainer which is class defined as 'container' in HTML file */
 .container{
     width: 100%;
     min-height: 100vh;
@@ -13,6 +14,7 @@
     border: 2px solid red;
 
 }
+/* styles of ToDo list box which is class defined as 'todo-app' in HTML file */
 .todo-app{
     width: 100%;
     max-width: 850px;
@@ -29,6 +31,7 @@
     margin-bottom: 20px;
 
 }
+/* Styles of the icon of todo-list app */
 .todo-app img{
     width:20px;
     height: 20px;
@@ -62,6 +65,7 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+/* Styles for the displaying the list which submitted by user */
 ul li{
     list-style:none;
     font-size: 28px;
@@ -84,13 +88,16 @@ ul li::before{
 
 }
 ul li.checked{
-    color:red;
-    text-decoration: line-through;
+    color:#08ec54;
+    text-decoration: dashed;
+  
+ 
 }
 ul li.checked::before{
     content:'';
     background-image: url('./img/fill2.png');
 }
+
 ul li span{
     position: absolute;
     right:0;
@@ -108,14 +115,13 @@ ul li span:hover{
 
 }
 
-
+/* added Responsives  */
 @media (max-width: 500px) {
     .press li { width: 100%; } /* On small screens, show one logo per row */
 
     .todo-app{
         max-width: 540px;
-        position: relative;
-        top:30%;
+       
 
     }
 }
